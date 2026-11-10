@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#B3121F" />
+  <title>Pathfinder Club | Adventist Youth Ministries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="landing">
+
+  <header class="nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path d="M12 2 22 20H2z" fill="#FFC20E"/><circle cx="12" cy="14" r="3" fill="#B3121F"/></svg>
+      <span>Pathfinders</span>
+    </a>
+    <a class="nav-link" href="auth.html">Sign in</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <svg class="compass" viewBox="0 0 200 200" role="img" aria-label="Compass">
+        <circle cx="100" cy="100" r="92" fill="none" stroke="#FFC20E" stroke-width="6"/>
+        <circle cx="100" cy="100" r="76" fill="none" stroke="#FFC20E" stroke-width="1.5" stroke-dasharray="2 8"/>
+        <g class="needle">
+          <path d="M100 28 114 100H86z" fill="#FFC20E"/>
+          <path d="M100 172 86 100h28z" fill="#fff" opacity=".85"/>
+        </g>
+        <circle cx="100" cy="100" r="7" fill="#B3121F" stroke="#FFC20E" stroke-width="3"/>
+      </svg>
+
+      <h1>Find a need<br />and fill it.</h1>
+      <p class="lead">A worldwide Seventh-day Adventist youth club for ages 10 to 15. Camp, learn, serve, and grow in faith with friends who love Jesus.</p>
+      <button id="getStarted" class="btn btn-yellow" type="button">Get started</button>
+    </section>
+
+    <section class="creed">
+      <div class="creed-item">
+        <h2>Our aim</h2>
+        <p>The Advent message to all the world in my generation.</p>
+      </div>
+      <div class="creed-item">
+        <h2>Our motto</h2>
+        <p>The love of Christ compels us.</p>
+      </div>
+      <div class="creed-item">
+        <h2>The pledge</h2>
+        <p>By the grace of God, I will be pure and kind and true. I will keep the Pathfinder Law. I will be a servant of God and a friend to man.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>What Pathfinders do</h2>
+      <p class="about-intro">With nearly 2 million members worldwide, the club welcomes any young person who promises to follow the Pathfinder Pledge and Law, whatever their church background.</p>
+      <ul class="pillars">
+        <li><strong>Outdoor adventure</strong><span>Camping, hiking, canoeing, and backpacking trips with your club.</span></li>
+        <li><strong>Learning and skills</strong><span>Earn honors and class awards in crafts, nature, health, and more.</span></li>
+        <li><strong>Community service</strong><span>Spot a need in your neighborhood and take action.</span></li>
+        <li><strong>Faith and friendship</strong><span>Grow closer to God and to people who share your values.</span></li>
+      </ul>
+      <button class="btn btn-red" type="button" data-start>Join the club</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Pathfinder Club · Adventist Youth Ministries</p>
+  </footer>
+
+  <div id="loader" class="loader" aria-hidden="true">
+    <svg class="loader-compass" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="#FFC20E" stroke-width="6"/>
+      <path d="M100 28 114 100H86z" fill="#FFC20E"/>
+      <path d="M100 172 86 100h28z" fill="#fff" opacity=".85"/>
+    </svg>
+    <p>Preparing your trail…</p>
+    <div class="bar"><span></span></div>
+  </div>
+
+  <script type="module" src="js/landing.js"></script>
+</body>
+</html>
